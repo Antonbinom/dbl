@@ -1,0 +1,55 @@
+.header
+	padding: 35px 0
+	&__top
+		padding-bottom: 35px
+		align-items: center
+		&::after
+			display: block
+			content: ''
+			width: 96%
+			height: 1px
+			margin: auto
+			margin-top: 25px
+			background-color: #C2C2C2
+		& .logo
+			align-items: center
+			&-image
+				width: 80px
+				height: 80px
+				margin-right: 10px
+			&-name
+				font-size: 27px
+				text-transform: uppercase
+				color: $primary
+			&-text
+				font-size: 10px
+				text-transform: uppercase
+				color: $primary
+		& .item
+			&-icon
+				display: flex
+				align-items: center
+				justify-content: center
+				min-width: 50px
+				height: 50px
+				color: $light
+				font-size: 24px
+				border-radius: 50%
+				background-color: $blue
+			&-info
+				margin-left: 10px
+				font-family: 'Open-sans', sans-serif
+				font-size: 15px
+				line-height: 22px
+				color: $primary
+				& strong
+					text-transform: uppercase
+	&__bottom
+		& .nav
+			&-item
+				font-size: 20px
+				line-height: 24px
+				color: $primary
+.dropdown:hover .dropdown-menu
+	display: block
+	margin-top: 0
