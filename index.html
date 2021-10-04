@@ -23,7 +23,7 @@
   <header class="header">
     <div class="container">
       <div class="header__top">
-        <div class="row align-items-center">
+        <div class="row justify-content-between align-items-center">
           <div class="col-md-4 d-flex logo">
             <img class="logo-image" src="img/logo2.png" alt="Image: Логотип">
             <div class="logo__info">
@@ -34,15 +34,6 @@
           </div>
           <div class="col-md-8 header__top-items">
             <div class="row">
-              <div class="col-md-4 d-flex header__top-item">
-                <div class="item-icon">
-                  <i class="fal fa-clock"></i>
-                </div>
-                <div class="item-info">
-                  <strong>c 09:00 до 17:00</strong><br>
-                  <span>Суббота и Воскресенье - Выходные</span>
-                </div>
-              </div>
               <div class="col-md-4 d-flex header__top-item">
                 <div class="item-icon">
                   <i class="far fa-envelope"></i>
@@ -61,14 +52,65 @@
                   <a href="tel:+79999999999">+7(999)999-99-99</a>
                 </div>
               </div>
+              <div class="col-md-4 d-flex header__top-item">
+                <div class="item-icon">
+                  <i class="fal fa-clock"></i>
+                </div>
+                <div class="item-info">
+                  <strong>c 09:00 до 17:00</strong><br>
+                  <span>Сб и Вс - Выходные</span>
+                </div>
+              </div>
             </div>
           </div>
           <!-- /header__top-items -->
+          <nav class=" col-1 col-lg-12 navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">О компании</a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Услуги
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Создание интернет магазина под ключ</a></li>
+                    <li><a class="dropdown-item" href="#">Разработка сайтов под ключ</a></li>
+                    <li><a class="dropdown-item" href="#">SEO продвижение цены</a></li>
+                    <li><a class="dropdown-item" href="#">Контекстная реклама</a></li>
+                    <li><a class="dropdown-item" href="#">SMM-продвижение</a></li>
+                    <li><a class="dropdown-item" href="#">Аудит сайта</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Вакансии</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Портфолио</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <button class="btn button-search" type="submit"><i class="fal fa-search"></i></button>
+            </div>
+          </nav>
+          <!-- /navbar -->
         </div>
         <!-- /row -->
       </div>
       <!-- /header__top -->
-      <div class="header__bottom">
+      <!-- <div class="header__bottom">
         <nav class="navbar navbar-expand-lg navbar-light">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -107,12 +149,12 @@
                 <a class="nav-link" href="#">Контакты</a>
               </li>
             </ul>
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn button-search" type="submit"><i class="fal fa-search"></i></button>
           </div>
-        </nav>
-        <!-- /navbar -->
-      </div>
-      <!-- /header__bottom -->
+        </nav> -->
+      <!-- /navbar -->
+    </div>
+    <!-- /header__bottom -->
     </div>
     <!-- /container -->
   </header>
