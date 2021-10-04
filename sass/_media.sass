@@ -1,17 +1,47 @@
-@media (max-width: 1200px)
+@media (max-width: 991px)
+	.main
+		&-title
+			font-size: 48px
+@media (max-width: 768px)
+	.benefit
+		&-title
+			font-size: 36px
+		&-name
+			font-size: 21px
+@media (max-width: 576px)
 	.header
+		padding: 20px 0
 		& .logo
 			&-image
-				width: 70px
-				height: 70px
+				width: 60px
+				height: 60px
 			&-name
-				font-size: 24px
-@media (max-width: 991px)
+				font-size: 21px
+	.main
+		margin-top: 117px
+		&-title
+			font-size: 38px
+			line-height: 1.2
+@media (max-width: 460px)
 	.header
-		&__top-items
-			display: none
-		& .navbar
-			padding-top: 8px
-			margin: 0
-			&::before
-				content: none
+		& .logo
+			flex-basis: 100%
+			margin-bottom: 30px
+	.main
+		margin-top: 187px
+		padding-bottom: 60px
+		&-title
+			font-size: 32px
+			line-height: 1.2
+		&__buttons
+			display: flex
+			flex-direction: column
+			& button
+				width: 250px
+			& .button
+				&-about
+					margin-right: 0
+					margin-bottom: 20px
+				&-order
+					padding-top: 10px
+					padding-bottom: 10px

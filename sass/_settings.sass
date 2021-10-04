@@ -5,8 +5,8 @@
 h1, h2, h3, h4, h5, p
 	margin: 0
 body
-	font-family: 'Montserrat', sans-serif
-	font-weight: 400
+	font-family: 'Raleway', sans-serif
+	font-weight: 500
 	margin: 0
 img
 	max-width: 100%
@@ -14,14 +14,19 @@ a
 	text-decoration: none
 	color: inherit
 	cursor: pointer
+	&:hover
+		color: none
 .container
 	max-width: 1200px
 	margin: auto
 	padding: 0 15px
 .button
-	background-color: $blue
+	padding: 15px 30px
+	font-size: 20px
 	color: $light
-	text-transform: uppercase
 	border: none
-	border-radius: 25px
+	background-color: $orange
 	cursor: pointer
+	&-order
+		&:hover
+			color: #fff

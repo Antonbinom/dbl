@@ -7,9 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -20,105 +18,29 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-md-4 d-flex logo">
-            <img class="logo-image" src="img/logo2.png" alt="Image: Логотип">
-            <div class="logo__info">
-              <span class="logo-name">digital<span>brainlab</span></span>
-              <p class="logo-text">Разрабатываем сайты под ключ любой сложности</p>
-            </div>
-            <a href="#" class="logo-link"></a>
+  <header class="header fixed-top">
+    <nav class="navbar navbar-light navbar-expand-lg">
+      <div class="container">
+        <div class="d-flex logo">
+          <img class="logo-image" src="img/logo2.png" alt="Image: Логотип">
+          <div class="logo__info">
+            <span class="logo-name">digital<span>brainlab</span></span>
+            <p class="logo-text">Разрабатываем сайты под ключ любой сложности</p>
           </div>
-          <div class="col-md-8 header__top-items">
-            <div class="row">
-              <div class="col-md-4 d-flex header__top-item">
-                <div class="item-icon">
-                  <i class="far fa-envelope"></i>
-                </div>
-                <div class="item-info">
-                  <strong>Наш Email</strong>
-                  <a href="mailto:digitalbrainlab@mail.ru">digitalbrainlab@mail.ru</a>
-                </div>
-              </div>
-              <div class="col-md-4 d-flex header__top-item">
-                <div class="item-icon">
-                  <i class="fal fa-mobile-android"></i>
-                </div>
-                <div class="item-info">
-                  <strong>Наш Телефон</strong>
-                  <a href="tel:+79999999999">+7(999)999-99-99</a>
-                </div>
-              </div>
-              <div class="col-md-4 d-flex header__top-item">
-                <div class="item-icon">
-                  <i class="fal fa-clock"></i>
-                </div>
-                <div class="item-info">
-                  <strong>c 09:00 до 17:00</strong><br>
-                  <span>Сб и Вс - Выходные</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /header__top-items -->
-          <nav class=" col-1 col-lg-12 navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Главная</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">О компании</a>
-                </li>
-                <li class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Услуги
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Создание интернет магазина под ключ</a></li>
-                    <li><a class="dropdown-item" href="#">Разработка сайтов под ключ</a></li>
-                    <li><a class="dropdown-item" href="#">SEO продвижение цены</a></li>
-                    <li><a class="dropdown-item" href="#">Контекстная реклама</a></li>
-                    <li><a class="dropdown-item" href="#">SMM-продвижение</a></li>
-                    <li><a class="dropdown-item" href="#">Аудит сайта</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Вакансии</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Портфолио</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Контакты</a>
-                </li>
-              </ul>
-              <button class="btn button-search" type="submit"><i class="fal fa-search"></i></button>
-            </div>
-          </nav>
-          <!-- /navbar -->
+          <a href="#" class="logo-link"></a>
         </div>
-        <!-- /row -->
-      </div>
-      <!-- /header__top -->
-      <!-- <div class="header__bottom">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- /.logo -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link" href="#">Главная</a>
               </li>
@@ -149,16 +71,109 @@
                 <a class="nav-link" href="#">Контакты</a>
               </li>
             </ul>
-            <button class="btn button-search" type="submit"><i class="fal fa-search"></i></button>
+            </li>
+            </ul>
           </div>
-        </nav> -->
-      <!-- /navbar -->
-    </div>
-    <!-- /header__bottom -->
-    </div>
-    <!-- /container -->
+        </div>
+      </div>
+      <!-- /container -->
+    </nav>
+    <!-- /nav -->
   </header>
   <!-- /header -->
+  <div class="main">
+    <div class="container">
+      <div class="main__content">
+        <h1 class="main-title">Современный интернет-магазин под ключ</h1>
+        <div class="main__buttons">
+          <button class="button button-about">Подробнее</button>
+          <a href="" class="button button-order">Заказать</a>
+        </div>
+      </div>
+      <!-- /.main-content -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.main -->
+  <div class="benefit">
+    <div class="container">
+      <h2 class="benefit-title">Этапы разработки</h2>
+      <div class="row">
+        <div class="col-12 col-lg-4 col-md-6 benefit-item align-items-center">
+          <img src="img/busines.png" alt="Анализ конкурентов" class="benefit-image">
+          <h3 class="benefit-name">Анализ конкурентов</h3>
+        </div>
+        <!-- /.benefit-item -->
+        <div class="col-12 col-lg-4 col-md-6 benefit-item align-items-center">
+          <img src="img/analisws.png" alt="Изображение" class="benefit-image">
+          <h3 class="benefit-name">Разработка прототипа</h3>
+        </div>
+        <!-- /.benefit-item -->
+        <div class="col-12 col-lg-4 col-md-6 benefit-item align-items-center">
+          <img src="img/picture.png" alt="Изображение" class="benefit-image">
+          <h3 class="benefit-name">Разработка дизайна</h3>
+        </div>
+        <!-- /.benefit-item -->
+        <div class="col-12 col-lg-4 col-md-6 benefit-item align-items-center">
+          <img src="img/repair.png" alt="Верстка" class="benefit-image">
+          <h3 class="benefit-name">Верстка</h3>
+        </div>
+        <!-- /.benefit-item -->
+        <div class="col-12 col-lg-4 col-md-6 benefit-item align-items-center">
+          <img src="img/optimize.png" alt="Изображение" class="benefit-image">
+          <h3 class="benefit-name">Программирование</h3>
+        </div>
+        <!-- /.benefit-item -->
+        <div class="col-12 col-lg-4 col-md-6 benefit-item align-items-center">
+          <img src="img/point.png" alt="Заполнение" class="benefit-image">
+          <h3 class="benefit-name">Заполнение</h3>
+        </div>
+        <!-- /.benefit-item -->
+        <div class="col-12 col-lg-4 col-md-6 benefit-item align-items-center">
+          <img src="img/info.png" alt="Отладка" class="benefit-image">
+          <h3 class="benefit-name">Отладка</h3>
+        </div>
+        <!-- /.benefit-item -->
+        <div class="col-12 col-lg-4 col-md-6 benefit-item align-items-center">
+          <img src="img/key.png" alt="Запуск" class="benefit-image">
+          <h3 class="benefit-name">Запуск</h3>
+        </div>
+        <!-- /.benefit-item -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.benefit -->
+  <div class="experience">
+    <div class="container">
+      <div class="row">
+        <div class="experience__item col-12 col-md-6 col-lg-3">
+          <span class="experience-number"><span class="mark">221+</span>Проектов</span>
+          <span class="experience-text">успешно реализовано</span>
+        </div>
+        <!-- /.experience__item -->
+        <div class="experience__item col-12 col-md-6 col-lg-3">
+          <span class="experience-number"><span class="mark">10+</span>Профессионалов</span>
+          <span class="experience-text">помогают развивать и совершенствовать ваши идеи</span>
+        </div>
+        <!-- /.experience__item -->
+        <div class="experience__item col-12 col-md-6 col-lg-3">
+          <span class="experience-number"><span class="mark">Мы</span>Знаем</span>
+          <span class="experience-text">как сделать чтобы ваш cайт приносил прибыль</span>
+        </div>
+        <!-- /.experience__item -->
+        <div class="experience__item col-12 col-md-6 col-lg-3">
+          <span class="experience-number"><span class="mark">11</span>лет</span>
+          <span class="experience-text">создаем продающие сайты</span>
+        </div>
+        <!-- /.experience__item -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.experience -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

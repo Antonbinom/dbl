@@ -347,8 +347,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -362,6 +362,10 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  color: none;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -369,77 +373,57 @@ a {
 }
 
 .button {
-  background-color: #1A9BDC;
+  padding: 15px 30px;
+  font-size: 20px;
   color: #FFFFFF;
-  text-transform: uppercase;
   border: none;
-  border-radius: 25px;
+  background-color: #ed500d;
   cursor: pointer;
 }
 
+.button-order:hover {
+  color: #fff;
+}
+
 .header {
-  padding: 35px 0;
+  padding: 30px 0;
+  align-items: center;
+  background-color: #fff;
 }
 
-.header__top {
-  padding-bottom: 35px;
+.header .logo {
   align-items: center;
 }
 
-.header__top .logo {
-  align-items: center;
-}
-
-.header__top .logo-image {
+.header .logo-image {
   width: 80px;
   height: 80px;
   margin-right: 10px;
 }
 
-.header__top .logo-name {
+.header .logo__info {
+  max-width: 200px;
+}
+
+.header .logo-name {
   font-size: 27px;
   text-transform: uppercase;
   color: #6A6A6A;
 }
 
-.header__top .logo-text {
+.header .logo-text {
   font-size: 10px;
   text-transform: uppercase;
   color: #6A6A6A;
 }
 
-.header__top .item-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 50px;
-  width: 50px;
-  height: 50px;
-  color: #FFFFFF;
-  font-size: 24px;
-  border-radius: 50%;
-  background-color: #1A9BDC;
-}
-
-.header__top .item-info {
-  margin-left: 10px;
-  font-family: 'Open-sans', sans-serif;
-  font-size: 15px;
-  line-height: 22px;
-  color: #6A6A6A;
-}
-
-.header__top .item-info strong {
-  text-transform: uppercase;
-}
-
-.header__top .navbar {
+.header .logo .navbar {
   position: relative;
   padding-top: 25px;
   margin-top: 25px;
 }
 
-.header__top .navbar::before {
+.header .logo .navbar::before {
   display: block;
   position: absolute;
   top: 0;
@@ -451,19 +435,10 @@ a {
   background-color: #C2C2C2;
 }
 
-.header__top .navbar .nav-item {
+.header .logo .navbar .nav-item {
   font-size: 20px;
   line-height: 24px;
   color: #6A6A6A;
-}
-
-.header__top .navbar .button-search {
-  width: 50px;
-  height: 50px;
-  font-size: 21px;
-  color: #FFFFFF;
-  background-color: #1A9BDC;
-  border-radius: 50%;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -471,25 +446,119 @@ a {
   margin-top: 0;
 }
 
-@media (max-width: 1200px) {
-  .header .logo-image {
-    width: 70px;
-    height: 70px;
-  }
-  .header .logo-name {
-    font-size: 24px;
-  }
+.main {
+  padding: 80px 0;
+  margin-top: 156px;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-title {
+  max-width: 900px;
+  margin-bottom: 50px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.main__buttons .button-about {
+  margin-right: 10px;
+}
+
+.benefit {
+  padding: 70px 0;
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+}
+
+.benefit-title {
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.benefit-item {
+  margin-bottom: 40px;
+}
+
+.benefit-image {
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 991px) {
-  .header__top-items {
-    display: none;
+  .main-title {
+    font-size: 48px;
   }
-  .header .navbar {
-    padding-top: 8px;
-    margin: 0;
+}
+
+@media (max-width: 768px) {
+  .benefit-title {
+    font-size: 36px;
   }
-  .header .navbar::before {
-    content: none;
+  .benefit-name {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 20px 0;
+  }
+  .header .logo-image {
+    width: 60px;
+    height: 60px;
+  }
+  .header .logo-name {
+    font-size: 21px;
+  }
+  .main {
+    margin-top: 117px;
+  }
+  .main-title {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 460px) {
+  .header .logo {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .main {
+    margin-top: 187px;
+    padding-bottom: 60px;
+  }
+  .main-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .main__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__buttons button {
+    width: 250px;
+  }
+  .main__buttons .button-about {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .main__buttons .button-order {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
