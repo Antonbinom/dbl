@@ -471,18 +471,34 @@ a:hover {
   margin-right: 10px;
 }
 
-.stage.benefit {
+.benefit {
+  padding: 60px 0;
   background-color: #fff;
   color: #000000;
 }
 
-.stage.benefit .stage-name, .stage.benefit .stage-text {
-  margin: auto;
-  max-width: 300px;
+.benefit-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
-.stage.benefit .stage-name {
+.benefit-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.benefit-image {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.benefit-name {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .experience {
@@ -509,6 +525,7 @@ a:hover {
 }
 
 .price {
+  background-color: #FFFFFF;
   padding: 80px 0;
 }
 
@@ -589,14 +606,17 @@ a:hover {
 
 .service {
   padding: 60px 0;
-  background-color: #fff;
+}
+
+.service .row {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 0px #c7c7c7;
 }
 
 .service-title {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   font-size: 50px;
   font-weight: 700;
-  color: #6A6A6A;
 }
 
 .service__item {
@@ -604,7 +624,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  padding: 40px;
 }
 
 .service__item-bottom {
@@ -641,6 +661,10 @@ a:hover {
   .experience__item:hover {
     background-color: #0c9d80;
   }
+  .button:hover {
+    background-color: #4f9095;
+    box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
 }
 
 @media (max-width: 991px) {
@@ -657,13 +681,6 @@ a:hover {
   }
   .experience-mark {
     font-size: 50px;
-  }
-}
-
-@media (min-width: 991px) {
-  .button:hover {
-    background-color: #4f9095;
-    box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -690,7 +707,7 @@ a:hover {
     transition: all 0.5s;
   }
   .price__item:hover {
-    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 5px 20px 0px #c7c7c7;
   }
 }
 

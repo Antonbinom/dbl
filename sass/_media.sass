@@ -8,6 +8,10 @@
 			transition: all 0.5s
 			&:hover
 				background-color: #0c9d80
+	.button
+		&:hover
+			background-color: $hover
+			box-shadow: 0 0px 10px 0px rgba(0,0,0, 0.75)
 @media (max-width: 991px)
 	.main
 		&-title
@@ -20,11 +24,6 @@
 			font-size: 18px
 		&-mark
 			font-size: 50px
-@media (min-width: 991px)
-	.button
-		&:hover
-			background-color: $hover
-			box-shadow: 0 0px 10px 0px rgba(0,0,0, 0.75)
 @media (max-width: 768px)
 	.stage
 		&-title
@@ -44,7 +43,7 @@
 			padding: 20px
 			transition: all 0.5s
 			&:hover
-				box-shadow: 0 5px 20px 0px rgba(0,0,0, 0.75)
+				box-shadow: 0 5px 20px 0px #c7c7c7
 @media (max-width: 576px)
 	.header
 		padding: 20px 0
