@@ -379,6 +379,7 @@ a:hover {
   border: none;
   background-color: #ed500d;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .button-order:hover {
@@ -392,7 +393,19 @@ a:hover {
 }
 
 .header .logo {
+  width: 340px;
+  position: relative;
   align-items: center;
+}
+
+.header .logo-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .header .logo-image {
@@ -417,38 +430,21 @@ a:hover {
   color: #6A6A6A;
 }
 
-.header .logo .navbar {
-  position: relative;
-  padding-top: 25px;
-  margin-top: 25px;
+.header .navbar {
+  margin-bottom: 10px;
 }
 
-.header .logo .navbar::before {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 2%;
-  right: 2%;
-  content: '';
-  width: 96%;
-  height: 1px;
-  background-color: #C2C2C2;
+.header .navbar-toggler {
+  border: none;
 }
 
-.header .logo .navbar .nav-item {
-  font-size: 20px;
-  line-height: 24px;
-  color: #6A6A6A;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
+.header .navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .main {
   padding: 80px 0;
-  margin-top: 156px;
+  margin-top: 206px;
   background-image: url(../img/bg.png);
   background-size: cover;
   background-position: center;
@@ -475,47 +471,235 @@ a:hover {
   margin-right: 10px;
 }
 
-.benefit {
+.stage.benefit {
+  background-color: #fff;
+  color: #000000;
+}
+
+.stage.benefit .stage-name, .stage.benefit .stage-text {
+  margin: auto;
+  max-width: 300px;
+}
+
+.stage.benefit .stage-name {
+  margin-bottom: 20px;
+}
+
+.experience {
+  background-color: #1abc9c;
+}
+
+.experience__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.experience-mark {
+  margin-bottom: 10px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: transparent;
+}
+
+.price {
+  padding: 80px 0;
+}
+
+.price-title {
+  margin-bottom: 60px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.price__item {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.price-image {
+  max-width: 150px;
+  max-height: 100px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.price-name {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #6A6A6A;
+}
+
+.price-list {
+  padding: 0;
+  list-style: none;
+}
+
+.price-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.price-number {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.price-button {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+}
+
+.stage {
   padding: 70px 0;
   background-color: #1c1c1c;
   color: #fff;
   text-align: center;
 }
 
-.benefit-title {
+.stage-title {
   margin-bottom: 50px;
   font-size: 50px;
   font-weight: 700;
   line-height: 1.4;
 }
 
-.benefit-item {
+.stage-item {
   margin-bottom: 40px;
 }
 
-.benefit-image {
-  margin-right: 10px;
+.stage-image {
   margin-bottom: 20px;
+  transition: transform 0.7s linear;
+}
+
+.stage-image:hover {
+  transform: rotateY(180deg);
+}
+
+.service {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.service-title {
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #6A6A6A;
+}
+
+.service__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.service__item-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.service-image {
+  margin-bottom: 30px;
+  object-fit: cover;
+  max-width: 150px;
+  height: 150px;
+}
+
+.service-name {
+  margin-bottom: 30px;
+}
+
+.service-price {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    opacity: 1;
+  }
+  .experience__item {
+    transition: all 0.5s;
+  }
+  .experience__item:hover {
+    background-color: #0c9d80;
+  }
 }
 
 @media (max-width: 991px) {
   .main-title {
     font-size: 48px;
   }
+  .experience {
+    padding-bottom: 40px;
+  }
+  .experience__item {
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-size: 18px;
+  }
+  .experience-mark {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 991px) {
+  .button:hover {
+    background-color: #4f9095;
+    box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
 }
 
 @media (max-width: 768px) {
-  .benefit-title {
+  .stage-title {
     font-size: 36px;
   }
-  .benefit-name {
+  .stage-name {
     font-size: 21px;
+  }
+  .stage-item:last-child {
+    margin-bottom: 0;
+  }
+  .stage-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .price__item {
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: all 0.5s;
+  }
+  .price__item:hover {
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.75);
   }
 }
 
 @media (max-width: 576px) {
   .header {
     padding: 20px 0;
+  }
+  .header .logo {
+    width: 250px;
   }
   .header .logo-image {
     width: 60px;
@@ -524,22 +708,33 @@ a:hover {
   .header .logo-name {
     font-size: 21px;
   }
+  .header .breadcrumb {
+    font-size: 14px;
+  }
   .main {
-    margin-top: 117px;
+    margin-top: 164px;
   }
   .main-title {
     font-size: 38px;
     line-height: 1.2;
   }
+  .experience__item {
+    max-width: 400px;
+  }
+  .price-title {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 460px) {
-  .header .logo {
-    flex-basis: 100%;
-    margin-bottom: 30px;
+  .header .breadcrumb {
+    font-size: 12px;
+  }
+  .header .navbar-toggler {
+    padding: 0;
   }
   .main {
-    margin-top: 187px;
+    margin-top: 160px;
     padding-bottom: 60px;
   }
   .main-title {
@@ -560,5 +755,41 @@ a:hover {
   .main__buttons .button-order {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .experience__item {
+    font-size: 16px;
+  }
+  .experience-mark {
+    font-size: 36px;
+  }
+  .stage-title {
+    font-size: 28px;
+  }
+  .price-title {
+    font-size: 28px;
+  }
+  .price-name {
+    font-size: 21px;
+  }
+  .price-list li {
+    font-size: 16px;
+  }
+  .price-number {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header .logo__info {
+    display: none;
+  }
+  .header .logo-link {
+    width: 60px;
+  }
+  .header .breadcrumb {
+    font-size: 12px;
+  }
+  .header .navbar-toggler {
+    padding: 0;
   }
 }
